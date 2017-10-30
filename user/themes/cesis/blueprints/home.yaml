@@ -24,6 +24,17 @@ form:
               type: text
               label: Header Title
 
+            header.cesis.headerSubTitle:
+                          type: text
+                          label: Header SubTitle
+
+            header.cesis.introTitle:
+              type: text
+              label: Intro Title
+
+            header.cesis.introText:
+                          type: textarea
+                          label: Intro Title
             #
             # Cover image
             #

@@ -1,0 +1,24 @@
+.hero {
+  height: 95vh;
+  min-height: rem-calc(500);
+  display: table;
+  width: 100%;
+  background-color: #333;
+  color: $color-white;
+
+  &__content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__title {
+    font-size: 5vw;
+  }
+
+  &__subTitle {
+    font-size: 2vw;
+    font-family: $font-subheader;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+}

@@ -1,0 +1,15 @@
+//VENDOR STYLING
+@import "settings/fonts";
+@import "settings/colors";
+@import "foundation";
+@import "settings/settings";
+@include foundation-everything(false, false);
+
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/app";
+@import "settings/mixins";
+@import "settings/settings";
+
+@import "base";
+@import "components/all";

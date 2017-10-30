@@ -15,42 +15,42 @@ class __TwigTemplate_8f6e9d4e3219abf4a8c397a7379a385ab8b0b163900813e092bcb2d5515
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 24
+        // line 23
         echo "
 <ul>
     ";
-        // line 26
+        // line 25
         if ($this->getAttribute($this->getAttribute((isset($context["theme_config"]) ? $context["theme_config"] : null), "dropdown", array()), "enabled", array())) {
-            // line 27
+            // line 26
             echo "        ";
             echo $this->getAttribute($this, "loop", array(0 => (isset($context["pages"]) ? $context["pages"] : null)), "method");
             echo "
     ";
         } else {
-            // line 29
+            // line 28
             echo "        ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["pages"]) ? $context["pages"] : null), "children", array()), "visible", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 30
+                // line 29
                 echo "            ";
                 $context["current_page"] = ((($this->getAttribute($context["page"], "active", array()) || $this->getAttribute($context["page"], "activeChild", array()))) ? ("selected") : (""));
-                // line 31
+                // line 30
                 echo "            <li class=\"";
                 echo (isset($context["current_page"]) ? $context["current_page"] : null);
                 echo "\">
                 <a href=\"";
-                // line 32
+                // line 31
                 echo $this->getAttribute($context["page"], "url", array());
                 echo "\">
                     ";
-                // line 33
+                // line 32
                 if ($this->getAttribute($this->getAttribute($context["page"], "header", array()), "icon", array())) {
                     echo "<i class=\"fa fa-";
                     echo $this->getAttribute($this->getAttribute($context["page"], "header", array()), "icon", array());
                     echo "\"></i>";
                 }
-                // line 34
+                // line 33
                 echo "                    ";
                 echo $this->getAttribute($context["page"], "menu", array());
                 echo "
@@ -61,28 +61,28 @@ class __TwigTemplate_8f6e9d4e3219abf4a8c397a7379a385ab8b0b163900813e092bcb2d5515
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 38
+            // line 37
             echo "    ";
         }
-        // line 39
+        // line 38
         echo "    ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "menu", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["mitem"]) {
-            // line 40
+            // line 39
             echo "        <li>
             <a href=\"";
-            // line 41
+            // line 40
             echo $this->getAttribute($context["mitem"], "url", array());
             echo "\">
                 ";
-            // line 42
+            // line 41
             if ($this->getAttribute($context["mitem"], "icon", array())) {
                 echo "<i class=\"fa fa-";
                 echo $this->getAttribute($context["mitem"], "icon", array());
                 echo "\"></i>";
             }
-            // line 43
+            // line 42
             echo "                ";
             echo $this->getAttribute($context["mitem"], "text", array());
             echo "
@@ -93,7 +93,7 @@ class __TwigTemplate_8f6e9d4e3219abf4a8c397a7379a385ab8b0b163900813e092bcb2d5515
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['mitem'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 47
+        // line 46
         echo "</ul>
 
 ";
@@ -161,20 +161,13 @@ class __TwigTemplate_8f6e9d4e3219abf4a8c397a7379a385ab8b0b163900813e092bcb2d5515
                     echo "\">
                     ";
                     // line 17
-                    if ($this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array())) {
-                        echo "<i class=\"fa fa-";
-                        echo $this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array());
-                        echo "\"></i>";
-                    }
-                    // line 18
-                    echo "                    ";
                     echo $this->getAttribute($context["p"], "menu", array());
                     echo "
                 </a>
             </li>
         ";
                 }
-                // line 22
+                // line 21
                 echo "    ";
             }
             $_parent = $context['_parent'];
@@ -205,7 +198,7 @@ class __TwigTemplate_8f6e9d4e3219abf4a8c397a7379a385ab8b0b163900813e092bcb2d5515
 
     public function getDebugInfo()
     {
-        return array (  178 => 22,  170 => 18,  164 => 17,  160 => 16,  155 => 15,  148 => 11,  141 => 8,  135 => 7,  131 => 6,  126 => 5,  123 => 4,  120 => 3,  115 => 2,  103 => 1,  97 => 47,  86 => 43,  80 => 42,  76 => 41,  73 => 40,  68 => 39,  65 => 38,  54 => 34,  48 => 33,  44 => 32,  39 => 31,  36 => 30,  31 => 29,  25 => 27,  23 => 26,  19 => 24,);
+        return array (  171 => 21,  164 => 17,  160 => 16,  155 => 15,  148 => 11,  141 => 8,  135 => 7,  131 => 6,  126 => 5,  123 => 4,  120 => 3,  115 => 2,  103 => 1,  97 => 46,  86 => 42,  80 => 41,  76 => 40,  73 => 39,  68 => 38,  65 => 37,  54 => 33,  48 => 32,  44 => 31,  39 => 30,  36 => 29,  31 => 28,  25 => 26,  23 => 25,  19 => 23,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -234,7 +227,6 @@ class __TwigTemplate_8f6e9d4e3219abf4a8c397a7379a385ab8b0b163900813e092bcb2d5515
         {% else %}
             <li class=\"{{ current_page }}\">
                 <a href=\"{{ p.url }}\">
-                    {% if p.header.icon %}<i class=\"fa fa-{{ p.header.icon }}\"></i>{% endif %}
                     {{ p.menu }}
                 </a>
             </li>

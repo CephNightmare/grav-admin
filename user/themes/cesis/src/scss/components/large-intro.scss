@@ -1,0 +1,16 @@
+.large-intro {
+  padding: rem-calc(92) 0;
+
+  &__title {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: rem-calc(200);
+      margin: rem-calc(32) auto;
+      display: block;
+      height: rem-calc(2);
+      background-color: $color-red;
+    }
+  }
+}

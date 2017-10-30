@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'F:/wamp64/www/grav-admin/user/config/system.yaml',
-    'modified' => 1509287088,
+    'modified' => 1509287295,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -30,7 +30,7 @@ return [
             'hide_in_urls' => false
         ],
         'pages' => [
-            'theme' => 'alpha',
+            'theme' => 'cesis',
             'order' => [
                 'by' => 'default',
                 'dir' => 'asc'

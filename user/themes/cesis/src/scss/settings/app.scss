@@ -1,0 +1,14 @@
+body {
+  font-family: $font-body;
+}
+
+h1, .h1 {
+  font-family: $font-header;
+}
+
+h2, .h2 {
+  font-family: $font-subheader;
+  font-weight: 700;
+  font-size: 2vw;
+  text-transform: uppercase;
+}

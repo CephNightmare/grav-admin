@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'F:/wamp64/www/grav-admin/user/themes/cesis/blueprints/home.yaml',
-    'modified' => 1509289510,
+    'modified' => 1509398527,
     'data' => [
         'title' => 'Home',
         'form' => [
@@ -17,6 +17,18 @@ return [
                                 'header.cesis.headerTitle' => [
                                     'type' => 'text',
                                     'label' => 'Header Title'
+                                ],
+                                'header.cesis.headerSubTitle' => [
+                                    'type' => 'text',
+                                    'label' => 'Header SubTitle'
+                                ],
+                                'header.cesis.introTitle' => [
+                                    'type' => 'text',
+                                    'label' => 'Intro Title'
+                                ],
+                                'header.cesis.introText' => [
+                                    'type' => 'textarea',
+                                    'label' => 'Intro Title'
                                 ],
                                 'header.cesis.backgroundImage' => [
                                     'type' => 'file',
