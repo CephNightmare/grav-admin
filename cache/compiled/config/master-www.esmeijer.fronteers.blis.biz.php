@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1509397308,
-    'checksum' => 'a64b812fc9c3015bf0eea660d0a31f18',
+    'timestamp' => 1509478488,
+    'checksum' => 'c0c7fcf48860be10dedc18563f030b5e',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1508877790
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1509478023
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
@@ -19,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1508316090
+                'modified' => 1509478488
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -27,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1509287295
+                'modified' => 1509478449
             ]
         ],
         'system/config' => [
@@ -148,12 +152,12 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'from_name' => NULL,
-                'to' => NULL,
-                'to_name' => NULL,
+                'from' => 'info@esmeijermakelaardij.nl',
+                'from_name' => 'Patricia Esmeijer',
+                'to' => 'info@esmeijermakelaardij.nl',
+                'to_name' => 'Patricis Esmeijer',
                 'mailer' => [
-                    'engine' => 'sendmail',
+                    'engine' => 'smtp',
                     'smtp' => [
                         'server' => 'localhost',
                         'port' => 25,
@@ -166,7 +170,7 @@ return [
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => true
             ],
             'error' => [
                 'enabled' => true,
@@ -519,11 +523,11 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
-            'default_lang' => 'en',
+            'title' => 'Esmeijer Makelaardij en Taxatiebureau',
+            'default_lang' => 'nl',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Patricia Esmeijer',
+                'email' => 'info@esmeijermakelaardij.nl'
             ],
             'taxonomies' => [
                 0 => 'category',
@@ -580,7 +584,7 @@ return [
             'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'nl'
                 ],
                 'include_default_lang' => true,
                 'translations' => true,
@@ -644,7 +648,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -705,7 +709,7 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => '1',
                 'log' => true
             ],
             'debugger' => [

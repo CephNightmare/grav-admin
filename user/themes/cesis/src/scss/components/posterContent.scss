@@ -1,0 +1,46 @@
+.posterContent {
+  height: 80vh;
+  min-height: rem-calc(600);
+  display: table;
+  width: 100%;
+  position: relative;
+  background-color: $color-white;
+  padding: rem-calc(62) 0;
+
+  &__content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+
+    &::after {
+      content: "";
+      height: rem-calc(2);
+      width: rem-calc(100);
+      background-color: $color-red;
+      display: block;
+      margin: rem-calc(32) 0 0 0;
+    }
+  }
+
+  &__text {
+    margin-top: rem-calc(48);
+    margin-bottom: 0;
+    font-size: rem-calc(20);
+  }
+
+  &__button {
+    margin-top: rem-calc(32);
+  }
+}

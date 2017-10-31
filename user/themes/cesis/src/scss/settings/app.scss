@@ -9,6 +9,33 @@ h1, .h1 {
 h2, .h2 {
   font-family: $font-subheader;
   font-weight: 700;
-  font-size: 2vw;
   text-transform: uppercase;
+  font-size: rem-calc(28);
+
+  @media only screen and (min-width: map_get($breakpoints, large)) {
+    font-size: 2vw;
+  }
+}
+
+h3, .h3 {
+  font-family: $font-subheader;
+  font-weight: 700;
+  font-size: rem-calc(24);
+  text-transform: uppercase;
+
+  @media only screen and (min-width: map_get($breakpoints, large)) {
+    font-size: 1.5vw;
+  }
+
+}
+
+h4, .h4 {
+  font-family: $font-subheader;
+  font-weight: 700;
+  font-size: rem-calc(14);
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 2.1;
 }

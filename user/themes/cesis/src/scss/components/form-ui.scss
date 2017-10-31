@@ -1,0 +1,42 @@
+[type=text],
+[type=password],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=month],
+[type=week],
+[type=email],
+[type=number],
+[type=search],
+[type=tel],
+[type=time],
+[type=url],
+[type=color],
+textarea {
+
+  &, &:focus {
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid rgba($color-white, .3);
+    padding: rem-calc(20);
+    box-shadow: none;
+    font-size: rem-calc(14);
+    font-weight: 100;
+
+    @include placeholder-color(rgba($color-white, .3));
+  }
+
+  &:focus {
+    border: 1px solid $color-white;
+  }
+}
+
+.notices.notices {
+  padding: 12px 30px;
+  text-align: left;
+
+  p {
+    margin: 0;
+  }
+}

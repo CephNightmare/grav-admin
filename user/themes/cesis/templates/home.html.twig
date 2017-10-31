@@ -4,7 +4,7 @@
 
     {% include "partials/hero.html.twig" %}
 
-    <section class="large-intro">
+    <section class="large-intro large-intro--grey-bg">
         <div class="row">
             <div class="small-24 large-18 xlarge-12 column large-centered text-center">
                 <h2 class="large-intro__title">{{ page.header.cesis.introTitle }}</h2>
@@ -13,5 +13,10 @@
         </div>
     </section>
 
-    {#{% include "forms/form.html.twig" %}#}
+    {% include "partials/posterContent.html.twig" %}
+
+    {% include "partials/taxationForm.html.twig" %}
+
+    {% include "partials/services.html.twig" %}
+
 {% endblock %}

@@ -1,6 +1,10 @@
 .large-intro {
   padding: rem-calc(92) 0;
 
+  &--grey-bg {
+    background-color: $color-light-bg;
+  }
+
   &__title {
     position: relative;
 

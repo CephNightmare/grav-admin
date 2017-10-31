@@ -1,0 +1,23 @@
+.formSection {
+  background-color: $color-dark-bg;
+
+  &__title {
+    color: $color-white;
+  }
+
+  &__text {
+    color: rgba($color-white, .2);
+  }
+
+  &__form {
+    margin-top: rem-calc(64);
+  }
+
+  .inline {
+    display: none;
+  }
+
+  .button {
+    margin: rem-calc(24) rem-calc(12);
+  }
+}

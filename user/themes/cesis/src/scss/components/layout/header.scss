@@ -2,7 +2,7 @@ $header-height: rem-calc(84);
 
 .header {
   height: $header-height;
-  background-color: rgba($color-black, .4);
+  background-color: $color-dark-bg;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,9 +46,16 @@ $header-height: rem-calc(84);
     display: block;
     height: $header-height;
     line-height: $header-height;
-    padding: 0 rem-calc(32);
     color: $color-white;
     transition: background-color .2s ease-in-out;
+
+    @media only screen and (min-width: map_get($breakpoints, large)) {
+      padding: 0 rem-calc(20);
+      font-size: 10px;
+    }
+    @media only screen and (min-width: map_get($breakpoints, xlarge)) {
+      padding: 0 rem-calc(32);
+    }
 
     &:hover {
       background-color: rgba($color-black, .5);

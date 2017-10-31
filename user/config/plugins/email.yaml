@@ -1,0 +1,15 @@
+enabled: true
+from: info@esmeijermakelaardij.nl
+from_name: 'Patricia Esmeijer'
+to: info@esmeijermakelaardij.nl
+to_name: 'Patricis Esmeijer'
+mailer:
+  engine: smtp
+  smtp:
+    server: localhost
+    port: 25
+    encryption: none
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: true

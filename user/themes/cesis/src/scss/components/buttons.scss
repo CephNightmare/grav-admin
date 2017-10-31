@@ -1,0 +1,15 @@
+.button {
+  font-size: rem-calc(13);
+  font-weight: 700;
+  background-color: $color-red;
+  display: inline-block;
+  text-align: center;
+  padding: rem-calc(20) rem-calc(40);
+  text-transform: uppercase;
+  transition: background .2s ease-in-out;
+
+  &:hover, &:focus {
+    background-color: darken($color-red, 10%);
+    outline: none;
+  }
+}

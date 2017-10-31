@@ -1,0 +1,17 @@
+<section class="posterContent">
+
+    <div class="posterContent__bg show-for-large" style="background-image: url('{{ page.media[header.cesis.methodsImage|first.name].cropResize(960, 10000).url }}')"></div>
+
+    <div class="posterContent__content">
+        <div class="row">
+            <div class="small-24 large-8 large-push-14 column">
+                <h3 class="posterContent__title">{{ page.header.cesis.methodsTitle }}</h3>
+                <p class="posterContent__text">
+                    {{ page.header.cesis.methodsText }}
+                </p>
+
+                <a class="posterContent__button button" href="/werkwijze" title="Werkwijze">{{ page.header.cesis.methodsButtonText }}</a>
+            </div>
+        </div>
+    </div>
+</section>

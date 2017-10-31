@@ -5,6 +5,9 @@
   width: 100%;
   background-color: #333;
   color: $color-white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &__content {
     display: table-cell;
@@ -12,13 +15,30 @@
   }
 
   &__title {
-    font-size: 5vw;
+    font-size: 8vw;
+    line-height: 1;
+
+    @media only screen and (min-width: map_get($breakpoints, medium)) {
+      font-size: 5vw;
+      line-height: 1.4;
+    }
   }
 
   &__subTitle {
-    font-size: 2vw;
     font-family: $font-subheader;
     text-transform: uppercase;
     letter-spacing: 4px;
+    font-size: 4vw;
+    word-break: break-word;
+    margin-top: rem-calc(32);
+
+    @media only screen and (min-width: map_get($breakpoints, medium)) {
+      font-size: 2vw;
+      margin-top: 0;
+    }
+  }
+
+  &__button {
+    margin-top: rem-calc(32);
   }
 }

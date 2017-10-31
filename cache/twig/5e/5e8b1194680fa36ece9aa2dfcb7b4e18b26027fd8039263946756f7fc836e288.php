@@ -32,6 +32,8 @@ class __TwigTemplate_11cfcf1641e5a68c4e406e5e5c1fb15dbb762f95552301d8237e271189a
         echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "headerSubTitle", array());
         echo "</h2>
                 </hgroup>
+                <a class=\"hero__button button\" href=\"#taxationForm\" title=\"Vul uw taxatie in\">Vraag direct een taxatie aan.</a>
+
             </div>
         </div>
     </div>
@@ -71,6 +73,8 @@ class __TwigTemplate_11cfcf1641e5a68c4e406e5e5c1fb15dbb762f95552301d8237e271189a
                     <h1 class=\"hero__title\">{{ page.header.cesis.headerTitle }}</h1>
                     <h2 class=\"hero__subTitle\">{{ page.header.cesis.headerSubTitle }}</h2>
                 </hgroup>
+                <a class=\"hero__button button\" href=\"#taxationForm\" title=\"Vul uw taxatie in\">Vraag direct een taxatie aan.</a>
+
             </div>
         </div>
     </div>

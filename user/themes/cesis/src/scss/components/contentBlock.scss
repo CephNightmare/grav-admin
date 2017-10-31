@@ -1,0 +1,22 @@
+.contentBlock {
+  background-color: $color-white;
+  padding: rem-calc(32);
+  transition: box-shadow .3s ease-in-out;
+  display: block;
+  margin-top: rem-calc(48);
+  color: $color-red;
+
+  &__title {
+    color: $color-text-dark;
+  }
+
+  &__text {
+    color: rgba($color-black, .4);
+    margin-top: rem-calc(21);
+  }
+
+  &:hover, &:focus {
+    box-shadow: 0 0 25px 0 rgba($color-black, .2);
+    color: $color-red;
+  }
+}
