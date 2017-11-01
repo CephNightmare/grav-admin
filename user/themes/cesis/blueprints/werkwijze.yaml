@@ -1,0 +1,100 @@
+title: taxatieaanvraag
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+
+          #
+          # Add your custom fields here.
+          # These fields will be available in the page's Content tab
+          # inside the Admin Panel.
+          #
+          fields:
+
+            header.cesis.headerTitle:
+              type: text
+              label: Header Title
+
+            header.cesis.headerSubTitle:
+              type: text
+              label: Header SubTitle
+
+            header.cesis.introTitle:
+              type: text
+              label: Intro Title
+
+            header.cesis.introText:
+              type: textarea
+              label: Intro Text
+            #
+            # Cover image
+            #
+            header.cesis.backgroundImage:
+              type: file
+              label: Background Image
+              destination: 'self@'
+              multiple: false
+              accept:
+                - image/*
+
+            header.cesis.step1:
+              type: fieldset
+              title: Stap 1
+              icon: comments
+              collapsed: false       # Initial state of fieldset (see collapsible option)
+              collapsible: true    # Whether one can expand the fieldset or not
+              fields:
+                header.cesis.step1.title:
+                  type: text
+                  label: Title
+                header.cesis.step1.text:
+                  type: textarea
+                  label: Text
+
+            header.cesis.step2:
+              type: fieldset
+              title: Stap 2
+              icon: comments
+              collapsed: false       # Initial state of fieldset (see collapsible option)
+              collapsible: true    # Whether one can expand the fieldset or not
+              fields:
+                header.cesis.step2.title:
+                  type: text
+                  label: Title
+                header.cesis.step2.text:
+                  type: textarea
+                  label: Text
+
+            header.cesis.step3:
+              type: fieldset
+              title: Stap 3
+              icon: comments
+              collapsed: false       # Initial state of fieldset (see collapsible option)
+              collapsible: true    # Whether one can expand the fieldset or not
+              fields:
+                header.cesis.step3.title:
+                  type: text
+                  label: Title
+                header.cesis.step3.text:
+                  type: textarea
+                  label: Text
+
+            header.cesis.step4:
+              type: fieldset
+              title: Stap 4
+              icon: comments
+              collapsed: false       # Initial state of fieldset (see collapsible option)
+              collapsible: true    # Whether one can expand the fieldset or not
+              fields:
+                header.cesis.step4.title:
+                  type: text
+                  label: Title
+                header.cesis.step4.text:
+                  type: textarea
+                  label: Text

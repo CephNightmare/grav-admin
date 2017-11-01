@@ -5630,7 +5630,8 @@ h2, .h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  color: #2a2d2e; }
   @media only screen and (min-width: 1024px) {
     h2, .h2 {
       font-size: 2vw; } }
@@ -5639,7 +5640,8 @@ h3, .h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #2a2d2e; }
   @media only screen and (min-width: 1024px) {
     h3, .h3 {
       font-size: 1.5vw; } }
@@ -5656,7 +5658,7 @@ p {
 .header {
   height: 5.25rem;
   background-color: #16181e;
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   right: 0;
@@ -5671,7 +5673,11 @@ p {
     display: inline-block;
     float: left;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    transition: background-color .3s ease-in-out; }
+    .header__logo:hover, .header__logo:focus {
+      background-color: #990026;
+      color: #ffffff; }
   .header__nav {
     display: inline-block;
     float: left;
@@ -5695,13 +5701,27 @@ p {
     @media only screen and (min-width: 1024px) {
       .header__link {
         padding: 0 1.25rem;
-        font-size: 10px; } }
+        font-size: 0.625rem; } }
     @media only screen and (min-width: 1200px) {
       .header__link {
-        padding: 0 2rem; } }
-    .header__link:hover {
+        padding: 0 2rem;
+        font-size: 0.875rem; } }
+    .header__link:hover, .header__link:focus {
       background-color: rgba(0, 0, 0, 0.5);
       color: #ffffff; }
+
+.footer {
+  background-color: #16181e;
+  padding: 2.25rem 0; }
+  .footer__link {
+    color: #ffffff;
+    transition: color .2s ease-in-out;
+    margin-right: 1.5rem; }
+    .footer__link:hover {
+      color: #cc0033; }
+  .footer__copyright {
+    float: right;
+    color: rgba(255, 255, 255, 0.5); }
 
 .button {
   font-size: 0.8125rem;
@@ -5745,11 +5765,11 @@ p {
 [type=color]:focus,
 textarea,
 textarea:focus {
-  background-color: transparent;
-  color: white;
+  background-color: #ffffff;
+  color: #16181e;
   border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 1.25rem;
+  border: 1px solid #dddddd;
+  padding: 1.875rem 1.25rem;
   box-shadow: none;
   font-size: 0.875rem;
   font-weight: 100; }
@@ -5783,7 +5803,7 @@ textarea:focus {
   textarea::-webkit-input-placeholder,
   textarea:focus::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: rgba(255, 255, 255, 0.3); }
+    color: rgba(0, 0, 0, 0.7); }
   [type=text]::-moz-placeholder, [type=text]:focus::-moz-placeholder,
   [type=password]::-moz-placeholder,
   [type=password]:focus::-moz-placeholder,
@@ -5814,7 +5834,7 @@ textarea:focus {
   textarea::-moz-placeholder,
   textarea:focus::-moz-placeholder {
     /* Firefox 19+ */
-    color: rgba(255, 255, 255, 0.3); }
+    color: rgba(0, 0, 0, 0.7); }
   [type=text]:-ms-input-placeholder, [type=text]:focus:-ms-input-placeholder,
   [type=password]:-ms-input-placeholder,
   [type=password]:focus:-ms-input-placeholder,
@@ -5845,7 +5865,7 @@ textarea:focus {
   textarea:-ms-input-placeholder,
   textarea:focus:-ms-input-placeholder {
     /* IE 10+ */
-    color: rgba(255, 255, 255, 0.3); }
+    color: rgba(0, 0, 0, 0.7); }
   [type=text]:-moz-placeholder, [type=text]:focus:-moz-placeholder,
   [type=password]:-moz-placeholder,
   [type=password]:focus:-moz-placeholder,
@@ -5876,7 +5896,7 @@ textarea:focus {
   textarea:-moz-placeholder,
   textarea:focus:-moz-placeholder {
     /* Firefox 18- */
-    color: rgba(255, 255, 255, 0.3); }
+    color: rgba(0, 0, 0, 0.7); }
 
 [type=text]:focus,
 [type=password]:focus,
@@ -5893,7 +5913,7 @@ textarea:focus {
 [type=url]:focus,
 [type=color]:focus,
 textarea:focus {
-  border: 1px solid #ffffff; }
+  border: 1px solid #cc0033; }
 
 .notices.notices {
   padding: 12px 30px;
@@ -5901,18 +5921,40 @@ textarea:focus {
   .notices.notices p {
     margin: 0; }
 
+form .button {
+  border-radius: 4px; }
+
+.large-intro {
+  padding: 5.75rem 0; }
+  .large-intro--grey-bg {
+    background-color: #f4f4f4; }
+  .large-intro__title {
+    position: relative; }
+    .large-intro__title::after {
+      content: "";
+      width: 12.5rem;
+      margin: 2rem auto;
+      display: block;
+      height: 0.125rem;
+      background-color: #cc0033; }
+
 .formSection {
-  background-color: #16181e; }
+  background-color: #f4f4f4; }
   .formSection__title {
-    color: #ffffff; }
+    color: #2a2d2e; }
+    .formSection__title::after {
+      margin-left: 0; }
   .formSection__text {
-    color: rgba(255, 255, 255, 0.2); }
+    color: rgba(0, 0, 0, 0.7); }
   .formSection__form {
-    margin-top: 4rem; }
+    margin-top: 2rem; }
+    @media only screen and (min-width: 640px) {
+      .formSection__form {
+        margin-top: 0; } }
   .formSection .inline {
     display: none; }
   .formSection .button {
-    margin: 1.5rem 0.75rem; }
+    margin: 0.75rem 0; }
 
 .hero {
   height: 95vh;
@@ -5940,27 +5982,14 @@ textarea:focus {
     letter-spacing: 4px;
     font-size: 4vw;
     word-break: break-word;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    color: #ffffff; }
     @media only screen and (min-width: 640px) {
       .hero__subTitle {
         font-size: 2vw;
         margin-top: 0; } }
   .hero__button {
     margin-top: 2rem; }
-
-.large-intro {
-  padding: 5.75rem 0; }
-  .large-intro--grey-bg {
-    background-color: #f4f4f4; }
-  .large-intro__title {
-    position: relative; }
-    .large-intro__title::after {
-      content: "";
-      width: 12.5rem;
-      margin: 2rem auto;
-      display: block;
-      height: 0.125rem;
-      background-color: #cc0033; }
 
 .posterContent {
   height: 80vh;
@@ -6013,3 +6042,19 @@ textarea:focus {
 
 .services {
   background-color: #f4f4f4; }
+
+.steps__icon {
+  display: inline-block;
+  width: 4.375rem;
+  height: 4.375rem;
+  line-height: 4.375rem;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(45deg, #cc0033 1%, #ff1a53 100%);
+  border-radius: 50%;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.steps__title {
+  margin-top: 2rem; }

@@ -12,36 +12,38 @@
                 </ul>
             </li>
         {% else %}
-            <li class="{{ current_page }}">
-                <a href="{{ p.url }}">
+            <li class="header__listItem {{ current_page }}">
+                <a class="header__link" title="{{ p.menu }}" href="{{ p.url }}">
                     {{ p.menu }}
                 </a>
             </li>
         {% endif %}
     {% endfor %}
 {% endmacro %}
-
-<ul>
-    {% if theme_config.dropdown.enabled %}
-        {{ _self.loop(pages) }}
-    {% else %}
-        {% for page in pages.children.visible %}
-            {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
-            <li class="{{ current_page }}">
-                <a href="{{ page.url }}">
-                    {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
-                    {{ page.menu }}
+<nav class="header__nav">
+    <ul class="header__navList">
+        {% if theme_config.dropdown.enabled %}
+            {{ _self.loop(pages) }}
+        {% else %}
+            {% for page in pages.children.visible %}
+                {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
+                <li class="header__listItem {{ current_page }}">
+                    <a class="header__link" title="{{ page.title }}" href="{{ page.url }}">
+                        {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+                        {{ page.menu }}
+                    </a>
+                </li>
+            {% endfor %}
+        {% endif %}
+        {% for mitem in site.menu %}
+            <li class="header__listItem">
+                <a class="header__link" title="{{ mitem.title }}" href="{{ mitem.url }}">
+                    {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
+                    {{ mitem.text }}
                 </a>
             </li>
         {% endfor %}
-    {% endif %}
-    {% for mitem in site.menu %}
-        <li>
-            <a href="{{ mitem.url }}">
-                {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
-                {{ mitem.text }}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+    </ul>
+</nav>
+
 

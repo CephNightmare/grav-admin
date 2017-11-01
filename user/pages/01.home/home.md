@@ -42,8 +42,8 @@ form:
         -
             name: name
             label: null
-            placeholder: 'Enter your name'
-            autofocus: 'on'
+            placeholder: 'Voor en Achternaam'
+            autofocus: 'off'
             autocomplete: 'on'
             type: text
             validate:
@@ -51,7 +51,7 @@ form:
         -
             name: email
             label: null
-            placeholder: 'Enter your email address'
+            placeholder: 'E-mailadres'
             type: email
             validate:
                 required: true

@@ -1,0 +1,20 @@
+.steps {
+
+  &__icon {
+    display: inline-block;
+    width: rem-calc(70);
+    height: rem-calc(70);
+    line-height: rem-calc(70);
+    text-align: center;
+    color: $color-white;
+    background: linear-gradient(45deg, $color-red 1%, lighten($color-red, 15%) 100%);
+    border-radius: 50%;
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-size: rem-calc(32);
+  }
+
+  &__title {
+    margin-top: rem-calc(32);
+  }
+}

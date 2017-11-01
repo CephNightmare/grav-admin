@@ -1,0 +1,19 @@
+.footer {
+  background-color: $color-dark-bg;
+  padding: rem-calc(36) 0;
+
+  &__link {
+    color: $color-white;
+    transition: color .2s ease-in-out;
+    margin-right: rem-calc(24);
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
+  &__copyright {
+    float: right;
+    color: rgba($color-white, .5);
+  }
+}

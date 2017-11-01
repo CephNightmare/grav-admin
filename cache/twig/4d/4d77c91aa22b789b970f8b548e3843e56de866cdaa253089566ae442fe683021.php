@@ -25,7 +25,7 @@ class __TwigTemplate_1502bda7b0a8b19350b9dce2f489e781ef55c8893d4a3da7a97ab72f7f7
 
     <div class=\"posterContent__content\">
         <div class=\"row\">
-            <div class=\"small-24 large-8 large-push-14 column\">
+            <div class=\"small-24 large-8 large-push-13 column\">
                 <h3 class=\"posterContent__title\">";
         // line 8
         echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "methodsTitle", array());
@@ -78,7 +78,7 @@ class __TwigTemplate_1502bda7b0a8b19350b9dce2f489e781ef55c8893d4a3da7a97ab72f7f7
 
     <div class=\"posterContent__content\">
         <div class=\"row\">
-            <div class=\"small-24 large-8 large-push-14 column\">
+            <div class=\"small-24 large-8 large-push-13 column\">
                 <h3 class=\"posterContent__title\">{{ page.header.cesis.methodsTitle }}</h3>
                 <p class=\"posterContent__text\">
                     {{ page.header.cesis.methodsText }}

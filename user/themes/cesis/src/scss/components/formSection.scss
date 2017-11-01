@@ -1,16 +1,24 @@
 .formSection {
-  background-color: $color-dark-bg;
+  background-color: $color-light-bg;
 
   &__title {
-    color: $color-white;
+    color: $color-text-black;
+
+    &::after {
+      margin-left: 0;
+    }
   }
 
   &__text {
-    color: rgba($color-white, .2);
+    color: rgba($color-black, .7);
   }
 
   &__form {
-    margin-top: rem-calc(64);
+    margin-top: rem-calc(32);
+
+    @media only screen and (min-width: map_get($breakpoints, medium)) {
+      margin-top: 0;
+    }
   }
 
   .inline {
@@ -18,6 +26,6 @@
   }
 
   .button {
-    margin: rem-calc(24) rem-calc(12);
+    margin: rem-calc(12) 0;
   }
 }

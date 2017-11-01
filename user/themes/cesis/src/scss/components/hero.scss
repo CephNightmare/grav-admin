@@ -31,6 +31,7 @@
     font-size: 4vw;
     word-break: break-word;
     margin-top: rem-calc(32);
+    color: $color-white;
 
     @media only screen and (min-width: map_get($breakpoints, medium)) {
       font-size: 2vw;

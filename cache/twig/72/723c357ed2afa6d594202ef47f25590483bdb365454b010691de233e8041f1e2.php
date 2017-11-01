@@ -34,7 +34,7 @@ class __TwigTemplate_af2d3ea6741891e3ca922f3e3a9a9ef16f3fc4fdff09361ad562d0e7c02
         $this->loadTemplate("partials/hero.html.twig", "home.html.twig", 5)->display($context);
         // line 6
         echo "
-    <section class=\"large-intro large-intro--grey-bg\">
+    <section class=\"large-intro\">
         <div class=\"row\">
             <div class=\"small-24 large-18 xlarge-12 column large-centered text-center\">
                 <h2 class=\"large-intro__title\">";
@@ -51,12 +51,12 @@ class __TwigTemplate_af2d3ea6741891e3ca922f3e3a9a9ef16f3fc4fdff09361ad562d0e7c02
 
     ";
         // line 16
-        $this->loadTemplate("partials/posterContent.html.twig", "home.html.twig", 16)->display($context);
+        $this->loadTemplate("partials/taxationForm.html.twig", "home.html.twig", 16)->display($context);
         // line 17
         echo "
     ";
         // line 18
-        $this->loadTemplate("partials/taxationForm.html.twig", "home.html.twig", 18)->display($context);
+        $this->loadTemplate("partials/posterContent.html.twig", "home.html.twig", 18)->display($context);
         // line 19
         echo "
     ";
@@ -98,7 +98,7 @@ class __TwigTemplate_af2d3ea6741891e3ca922f3e3a9a9ef16f3fc4fdff09361ad562d0e7c02
 
     {% include \"partials/hero.html.twig\" %}
 
-    <section class=\"large-intro large-intro--grey-bg\">
+    <section class=\"large-intro\">
         <div class=\"row\">
             <div class=\"small-24 large-18 xlarge-12 column large-centered text-center\">
                 <h2 class=\"large-intro__title\">{{ page.header.cesis.introTitle }}</h2>
@@ -107,9 +107,9 @@ class __TwigTemplate_af2d3ea6741891e3ca922f3e3a9a9ef16f3fc4fdff09361ad562d0e7c02
         </div>
     </section>
 
-    {% include \"partials/posterContent.html.twig\" %}
-
     {% include \"partials/taxationForm.html.twig\" %}
+
+    {% include \"partials/posterContent.html.twig\" %}
 
     {% include \"partials/services.html.twig\" %}
 

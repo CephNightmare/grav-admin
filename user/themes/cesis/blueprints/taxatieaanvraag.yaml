@@ -1,0 +1,26 @@
+title: taxatieaanvraag
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+
+          #
+          # Add your custom fields here.
+          # These fields will be available in the page's Content tab
+          # inside the Admin Panel.
+          #
+          fields:
+
+            header.cesis.formTitle:
+              type: text
+              label: Form Title
+
+            header.cesis.formIntro:
+              type: textarea
+              label: Form Intro

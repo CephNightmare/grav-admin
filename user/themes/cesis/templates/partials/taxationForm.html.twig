@@ -1,16 +1,14 @@
-<section class="large-intro formSection">
+<section class="large-intro formSection{% if large %} formSection--large{% endif %}">
     <div class="row">
-        <div class="small-24 medium-20 large-16 medium-centered column text-center">
 
+        <div class="small-24 large-9 large-push-1 column">
             <h2 class="formSection__title large-intro__title">{{ page.header.cesis.formTitle }}</h2>
             <p class="formSection__text large-intro__text">{{ page.header.cesis.formIntro }}</p>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="small-24 medium-18 large-12 xxlarge-8 medium-centered column text-center">
+        <div class="small-24 large-10 large-pull-1 column">
             <div id="taxationForm" class="formSection__form">
-                {% include "forms/form.html.twig" %}
+                {% include "forms/form.html.twig" with { form: forms('contact-form') } %}
             </div>
         </div>
     </div>

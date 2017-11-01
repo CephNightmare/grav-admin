@@ -15,20 +15,20 @@
 textarea {
 
   &, &:focus {
-    background-color: transparent;
-    color: white;
+    background-color: $color-white;
+    color: $color-dark-bg;
     border-radius: 3px;
-    border: 1px solid rgba($color-white, .3);
-    padding: rem-calc(20);
+    border: 1px solid #dddddd;
+    padding: rem-calc(30) rem-calc(20);
     box-shadow: none;
     font-size: rem-calc(14);
     font-weight: 100;
 
-    @include placeholder-color(rgba($color-white, .3));
+    @include placeholder-color(rgba($color-black, .7));
   }
 
   &:focus {
-    border: 1px solid $color-white;
+    border: 1px solid $color-red;
   }
 }
 
@@ -38,5 +38,12 @@ textarea {
 
   p {
     margin: 0;
+  }
+}
+
+form {
+
+  .button {
+    border-radius: 4px;
   }
 }
