@@ -22,7 +22,7 @@ class __TwigTemplate_61be85a47c3a58f66920c62153deb33dd69e09e1093e17646000da8a302
             <div class=\"body__text\">
                 ";
         // line 5
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->markdownFilter($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "content", array()));
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->markdownFilter($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "bodyContent", array()));
         echo "
             </div>
         </div>
@@ -59,10 +59,10 @@ class __TwigTemplate_61be85a47c3a58f66920c62153deb33dd69e09e1093e17646000da8a302
     <div class=\"row\">
         <div class=\"small-24 large-18 xlarge-12 column large-centered\">
             <div class=\"body__text\">
-                {{ page.header.cesis.content|markdown }}
+                {{ page.header.cesis.bodyContent|markdown }}
             </div>
         </div>
     </div>
-</section>", "partials/body.html.twig", "F:\\wamp64\\www\\grav-admin\\user\\themes\\cesis\\templates\\partials\\body.html.twig");
+</section>", "partials/body.html.twig", "F:\\wamp64\\www\\www.esmeijermakelaardij.nl\\user\\themes\\cesis\\templates\\partials\\body.html.twig");
     }
 }

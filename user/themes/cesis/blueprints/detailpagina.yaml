@@ -33,7 +33,7 @@ form:
               type: textarea
               label: Header SubTitle
 
-            header.cesis.content:
+            header.cesis.bodyContent:
               label: Body Tekst
               type: markdown
               validate:
@@ -63,8 +63,6 @@ form:
                 header.cesis.callToAction.buttonLink:
                   type: pages
                   size: medium
-                  classes: fancyEsmeijer Makelaardij en Taxatiebureau
-                                ERKEND TAXATEUR EN AANKOOPBEMIDDELAAR
                   label: PLUGIN_ADMIN.HOME_PAGE
                   show_all: true
                   show_modular: true

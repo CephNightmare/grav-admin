@@ -61,6 +61,6 @@ class __TwigTemplate_7654ca67c5f02cd9beb23274e6cdc7e794c1e566d2c0a0c1565b8773f8b
     {% set message = form.inline_errors and form.messages ? \"FORM.VALIDATION_FAIL\"|t : form.message %}
 
     <div class=\"alert notices {{ form.message_color ?: 'green' }}\"><p>{{ message|raw }}</p></div>
-{% endif %}", "partials/form-messages.html.twig", "F:\\wamp64\\www\\grav-admin\\user\\plugins\\form\\templates\\partials\\form-messages.html.twig");
+{% endif %}", "partials/form-messages.html.twig", "F:\\wamp64\\www\\www.esmeijermakelaardij.nl\\user\\plugins\\form\\templates\\partials\\form-messages.html.twig");
     }
 }

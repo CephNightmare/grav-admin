@@ -74,6 +74,6 @@ class __TwigTemplate_e00f661d77ba6710f6b467228984ab7f3a78d8b03a508739e62c90cc902
             </div>
         </div>
     </div>
-</section>", "partials/heroSmall.html.twig", "F:\\wamp64\\www\\grav-admin\\user\\themes\\cesis\\templates\\partials\\heroSmall.html.twig");
+</section>", "partials/heroSmall.html.twig", "F:\\wamp64\\www\\www.esmeijermakelaardij.nl\\user\\themes\\cesis\\templates\\partials\\heroSmall.html.twig");
     }
 }

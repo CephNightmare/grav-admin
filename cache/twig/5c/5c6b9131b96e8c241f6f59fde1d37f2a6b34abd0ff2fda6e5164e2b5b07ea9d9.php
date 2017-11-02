@@ -64,6 +64,6 @@ class __TwigTemplate_b6861cd2a204165527f6055f5aef9bea436fb0adb8ee60352fc840b7201
             <p class=\"large-intro__text\">{{ page.header.cesis.introText }}</p>
         </div>
     </div>
-</section>", "partials/largeIntro.html.twig", "F:\\wamp64\\www\\grav-admin\\user\\themes\\cesis\\templates\\partials\\largeIntro.html.twig");
+</section>", "partials/largeIntro.html.twig", "F:\\wamp64\\www\\www.esmeijermakelaardij.nl\\user\\themes\\cesis\\templates\\partials\\largeIntro.html.twig");
     }
 }

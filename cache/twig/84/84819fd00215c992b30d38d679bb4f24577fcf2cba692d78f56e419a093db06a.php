@@ -265,6 +265,6 @@ class __TwigTemplate_85fd1b5346e9f1d376e9fbf70556b6b3b0c0079ee847add35af8c2966cf
 {% endif %}
 </div>
 
-", "forms/fields/tabs/tabs.html.twig", "F:\\wamp64\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\tabs\\tabs.html.twig");
+", "forms/fields/tabs/tabs.html.twig", "F:\\wamp64\\www\\www.esmeijermakelaardij.nl\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\tabs\\tabs.html.twig");
     }
 }

@@ -97,6 +97,6 @@ class __TwigTemplate_af2d3ea6741891e3ca922f3e3a9a9ef16f3fc4fdff09361ad562d0e7c02
     {% include \"partials/services.html.twig\" %}
 
 {% endblock %}
-", "home.html.twig", "F:\\wamp64\\www\\grav-admin\\user\\themes\\cesis\\templates\\home.html.twig");
+", "home.html.twig", "F:\\wamp64\\www\\www.esmeijermakelaardij.nl\\user\\themes\\cesis\\templates\\home.html.twig");
     }
 }
