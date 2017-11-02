@@ -1,0 +1,19 @@
+.body {
+  padding: rem-calc(82) 0;
+
+  h4 {
+    margin-bottom: rem-calc(12);
+    margin-top: rem-calc(48);
+  }
+
+  &__text {
+
+    h4:first-of-type {
+      margin-top: 0;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

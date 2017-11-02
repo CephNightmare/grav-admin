@@ -34,35 +34,25 @@ class __TwigTemplate_af2d3ea6741891e3ca922f3e3a9a9ef16f3fc4fdff09361ad562d0e7c02
         $this->loadTemplate("partials/hero.html.twig", "home.html.twig", 5)->display($context);
         // line 6
         echo "
-    <section class=\"large-intro\">
-        <div class=\"row\">
-            <div class=\"small-24 large-18 xlarge-12 column large-centered text-center\">
-                <h2 class=\"large-intro__title\">";
+    ";
+        // line 7
+        $this->loadTemplate("partials/largeIntro.html.twig", "home.html.twig", 7)->display($context);
+        // line 8
+        echo "
+    ";
+        // line 9
+        $this->loadTemplate("partials/taxationForm.html.twig", "home.html.twig", 9)->display($context);
         // line 10
-        echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "introTitle", array());
-        echo "</h2>
-                <p class=\"large-intro__text\">";
+        echo "
+    ";
         // line 11
-        echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "introText", array());
-        echo "</p>
-            </div>
-        </div>
-    </section>
-
-    ";
-        // line 16
-        $this->loadTemplate("partials/taxationForm.html.twig", "home.html.twig", 16)->display($context);
-        // line 17
+        $this->loadTemplate("partials/posterContent.html.twig", "home.html.twig", 11)->display($context);
+        // line 12
         echo "
     ";
-        // line 18
-        $this->loadTemplate("partials/posterContent.html.twig", "home.html.twig", 18)->display($context);
-        // line 19
-        echo "
-    ";
-        // line 20
-        $this->loadTemplate("partials/services.html.twig", "home.html.twig", 20)->display($context);
-        // line 21
+        // line 13
+        $this->loadTemplate("partials/services.html.twig", "home.html.twig", 13)->display($context);
+        // line 14
         echo "
 ";
     }
@@ -79,7 +69,7 @@ class __TwigTemplate_af2d3ea6741891e3ca922f3e3a9a9ef16f3fc4fdff09361ad562d0e7c02
 
     public function getDebugInfo()
     {
-        return array (  66 => 21,  64 => 20,  61 => 19,  59 => 18,  56 => 17,  54 => 16,  46 => 11,  42 => 10,  36 => 6,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  56 => 14,  54 => 13,  51 => 12,  49 => 11,  46 => 10,  44 => 9,  41 => 8,  39 => 7,  36 => 6,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -98,14 +88,7 @@ class __TwigTemplate_af2d3ea6741891e3ca922f3e3a9a9ef16f3fc4fdff09361ad562d0e7c02
 
     {% include \"partials/hero.html.twig\" %}
 
-    <section class=\"large-intro\">
-        <div class=\"row\">
-            <div class=\"small-24 large-18 xlarge-12 column large-centered text-center\">
-                <h2 class=\"large-intro__title\">{{ page.header.cesis.introTitle }}</h2>
-                <p class=\"large-intro__text\">{{ page.header.cesis.introText }}</p>
-            </div>
-        </div>
-    </section>
+    {% include \"partials/largeIntro.html.twig\" %}
 
     {% include \"partials/taxationForm.html.twig\" %}
 

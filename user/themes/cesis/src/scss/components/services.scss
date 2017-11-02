@@ -1,3 +1,11 @@
 .services {
   background-color: $color-light-bg;
+
+  &--whiteBg {
+    background-color: $color-white;
+
+    .contentBlock {
+      background-color: $color-light-bg;
+    }
+  }
 }

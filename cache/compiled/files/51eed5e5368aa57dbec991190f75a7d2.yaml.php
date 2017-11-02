@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'F:/wamp64/www/grav-admin/user/themes/cesis/blueprints/home.yaml',
-    'modified' => 1509483716,
+    'modified' => 1509650407,
     'data' => [
         'title' => 'Home',
         'form' => [
@@ -58,6 +58,16 @@ return [
                                 'header.cesis.methodsButtonText' => [
                                     'type' => 'text',
                                     'label' => 'Werkwijze Button Text'
+                                ],
+                                'header.cesis.methodsButtonLink' => [
+                                    'type' => 'pages',
+                                    'size' => 'medium',
+                                    'classes' => 'fancy',
+                                    'label' => 'Werkwijze Button Link',
+                                    'show_all' => true,
+                                    'show_modular' => true,
+                                    'show_root' => true,
+                                    'help' => 'PLUGIN_ADMIN.HOME_PAGE_HELP'
                                 ],
                                 'header.cesis.methodsImage' => [
                                     'type' => 'file',

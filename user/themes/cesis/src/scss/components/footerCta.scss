@@ -1,0 +1,23 @@
+.footerCta {
+  background-color: $color-red;
+  color: $color-white;
+  text-align: center;
+  padding: rem-calc(32) 0;
+
+  &__title {
+    display: inline-block;
+    color: $color-white;
+    text-transform: none;
+    vertical-align: middle;
+    margin-bottom: rem-calc(32);
+
+    @media only screen and (min-width: map_get($breakpoints, medium)) {
+      margin-bottom: 0;
+      margin-right: rem-calc(64);
+    }
+  }
+
+  &__button {
+    margin: 0;
+  }
+}

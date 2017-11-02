@@ -6,10 +6,22 @@
   text-align: center;
   padding: rem-calc(20) rem-calc(40);
   text-transform: uppercase;
-  transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out, color .2s ease-in-out;
 
   &:hover, &:focus {
     background-color: darken($color-red, 10%);
     outline: none;
+  }
+
+  &--ghost {
+    background-color: white;
+    border: 1px solid $color-white;
+    color: $color-red;
+    border-radius: 4px;
+
+    &:hover, &:focus {
+      color: $color-white;
+      background-color: $color-red;
+    }
   }
 }

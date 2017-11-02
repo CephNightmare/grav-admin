@@ -8,6 +8,28 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  $hero: &;
+
+  &--small {
+    height: 50vh;
+
+    #{$hero}__title {
+      font-size: 8vw;
+
+      @media only screen and (min-width: map_get($breakpoints, medium)) {
+        font-size: 4vw;
+      }
+    }
+
+    #{$hero}__subTitle {
+      font-size: 3vw;
+
+      @media only screen and (min-width: map_get($breakpoints, medium)) {
+        font-size: 1.5vw;
+
+      }
+    }
+  }
 
   &__content {
     display: table-cell;

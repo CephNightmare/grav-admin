@@ -37,8 +37,10 @@ class __TwigTemplate_1502bda7b0a8b19350b9dce2f489e781ef55c8893d4a3da7a97ab72f7f7
         echo "
                 </p>
 
-                <a class=\"posterContent__button button\" href=\"/werkwijze\" title=\"Werkwijze\">";
+                <a class=\"posterContent__button button\" href=\"";
         // line 13
+        echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "methodsButtonLink", array());
+        echo "\" title=\"Werkwijze\">";
         echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "methodsButtonText", array());
         echo "</a>
             </div>
@@ -84,7 +86,7 @@ class __TwigTemplate_1502bda7b0a8b19350b9dce2f489e781ef55c8893d4a3da7a97ab72f7f7
                     {{ page.header.cesis.methodsText }}
                 </p>
 
-                <a class=\"posterContent__button button\" href=\"/werkwijze\" title=\"Werkwijze\">{{ page.header.cesis.methodsButtonText }}</a>
+                <a class=\"posterContent__button button\" href=\"{{ page.header.cesis.methodsButtonLink }}\" title=\"Werkwijze\">{{ page.header.cesis.methodsButtonText }}</a>
             </div>
         </div>
     </div>

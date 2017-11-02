@@ -9,6 +9,7 @@ cesis:
     methodsTitle: 'Hoe werkt Esmeijer Makelaardij en Taxatiebureau?'
     methodsText: 'Wij werken deskundig en betrouwbaar om voor u een Taxatierapport binnen 5 werkdagen klaar te hebben. Uiteraard taxeert Esmeijer Makelaardij en Taxatieburo ook bedrijfsobjecten. Bent u op zoek naar een goedkope, snelle en kwalitatieve taxateur om uw huis of bedrijfspand te laten taxeren? Dan bent u bij Esmeijer Makelaardij en Taxatieburo aan het goede adres!'
     methodsButtonText: 'Bekijk onze werkwijze'
+    methodsButtonLink: /werkwijze
     servicesTitle: 'Onze diensten'
     servicesIntro: 'Bent u op zoek naar een goedkope, snelle en kwalitatieve taxateur om uw huis of bedrijfspand te laten taxeren? Dan bent u bij Esmeijer Makelaardij en Taxatieburo aan het goede adres!'
     servicesBlock1:
@@ -51,7 +52,7 @@ form:
         -
             name: email
             label: null
-            placeholder: 'E-mailadres'
+            placeholder: E-mailadres
             type: email
             validate:
                 required: true

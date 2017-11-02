@@ -1,0 +1,72 @@
+title: detailpagina
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+
+          #
+          # Add your custom fields here.
+          # These fields will be available in the page's Content tab
+          # inside the Admin Panel.
+          #
+          fields:
+
+            header.cesis.backgroundImage:
+              type: file
+              label: Background Image
+              destination: 'self@'
+              multiple: false
+              accept:
+                - image/*
+
+            header.cesis.headerTitle:
+              type: text
+              label: Header Title
+
+            header.cesis.headerSubTitle:
+              type: textarea
+              label: Header SubTitle
+
+            header.cesis.content:
+              label: Body Tekst
+              type: markdown
+              validate:
+                type: textarea
+
+            header.cesis.formTitle:
+              type: text
+              label: Form Title
+
+            header.cesis.formIntro:
+              type: textarea
+              label: Form Intro
+
+            header.cesis.callToAction:
+              type: fieldset
+              title: Call to Action
+              icon: comments
+              collapsed: false       # Initial state of fieldset (see collapsible option)
+              collapsible: true    # Whether one can expand the fieldset or not
+              fields:
+                header.cesis.callToAction.title:
+                  type: text
+                  label: Title
+                header.cesis.callToAction.buttonText:
+                  type: text
+                  label: Button Text
+                header.cesis.callToAction.buttonLink:
+                  type: pages
+                  size: medium
+                  classes: fancyEsmeijer Makelaardij en Taxatiebureau
+                                ERKEND TAXATEUR EN AANKOOPBEMIDDELAAR
+                  label: PLUGIN_ADMIN.HOME_PAGE
+                  show_all: true
+                  show_modular: true
+                  show_root: true
+                  help: PLUGIN_ADMIN.HOME_PAGE_HELP

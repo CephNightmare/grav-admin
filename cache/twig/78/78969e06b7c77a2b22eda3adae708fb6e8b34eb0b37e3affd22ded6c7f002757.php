@@ -34,6 +34,11 @@ class __TwigTemplate_deef0d203084408454adcb36f2d50546a10042e68c1bf5abe37c6fcba17
         $this->loadTemplate("partials/taxationForm.html.twig", "taxatieaanvraag.html.twig", 5)->display(array_merge($context, array("large" => true)));
         // line 6
         echo "
+   ";
+        // line 7
+        $this->loadTemplate("partials/services.html.twig", "taxatieaanvraag.html.twig", 7)->display(array_merge($context, array("whiteBg" => true)));
+        // line 8
+        echo "
 ";
     }
 
@@ -49,7 +54,7 @@ class __TwigTemplate_deef0d203084408454adcb36f2d50546a10042e68c1bf5abe37c6fcba17
 
     public function getDebugInfo()
     {
-        return array (  36 => 6,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  41 => 8,  39 => 7,  36 => 6,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -67,6 +72,8 @@ class __TwigTemplate_deef0d203084408454adcb36f2d50546a10042e68c1bf5abe37c6fcba17
 {% block content %}
 
    {% include \"partials/taxationForm.html.twig\" with {'large': true} %}
+
+   {% include \"partials/services.html.twig\" with {'whiteBg' : true } %}
 
 {% endblock %}
 ", "taxatieaanvraag.html.twig", "F:\\wamp64\\www\\grav-admin\\user\\themes\\cesis\\templates\\taxatieaanvraag.html.twig");

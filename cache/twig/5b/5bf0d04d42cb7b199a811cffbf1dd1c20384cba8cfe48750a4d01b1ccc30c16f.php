@@ -16,7 +16,11 @@ class __TwigTemplate_04fce0b46cb13340ca76e4da7fa1a5ef3b6bb274409dd66cb6f6b472339
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<section class=\"large-intro services\">
+        echo "<section class=\"large-intro services";
+        if ((isset($context["whiteBg"]) ? $context["whiteBg"] : null)) {
+            echo " services--whiteBg";
+        }
+        echo "\">
     <div class=\"row\">
         <div class=\"small-24 large-18 xlarge-12 column large-centered text-center\">
             <h2 class=\"services__title large-intro__title\">";
@@ -92,7 +96,7 @@ class __TwigTemplate_04fce0b46cb13340ca76e4da7fa1a5ef3b6bb274409dd66cb6f6b472339
 
     public function getDebugInfo()
     {
-        return array (  74 => 23,  70 => 22,  66 => 21,  60 => 20,  52 => 15,  48 => 14,  44 => 13,  38 => 12,  28 => 5,  24 => 4,  19 => 1,);
+        return array (  78 => 23,  74 => 22,  70 => 21,  64 => 20,  56 => 15,  52 => 14,  48 => 13,  42 => 12,  32 => 5,  28 => 4,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -105,7 +109,7 @@ class __TwigTemplate_04fce0b46cb13340ca76e4da7fa1a5ef3b6bb274409dd66cb6f6b472339
 
     public function getSourceContext()
     {
-        return new Twig_Source("<section class=\"large-intro services\">
+        return new Twig_Source("<section class=\"large-intro services{% if whiteBg %} services--whiteBg{% endif %}\">
     <div class=\"row\">
         <div class=\"small-24 large-18 xlarge-12 column large-centered text-center\">
             <h2 class=\"services__title large-intro__title\">{{ page.header.cesis.servicesTitle }}</h2>

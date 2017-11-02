@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'F:/wamp64/www/grav-admin/user/themes/cesis/blueprints/werkwijze.yaml',
-    'modified' => 1509571844,
+    'modified' => 1509650069,
     'data' => [
         'title' => 'taxatieaanvraag',
         'form' => [
@@ -29,6 +29,14 @@ return [
                                 'header.cesis.introText' => [
                                     'type' => 'textarea',
                                     'label' => 'Intro Text'
+                                ],
+                                'header.cesis.formTitle' => [
+                                    'type' => 'text',
+                                    'label' => 'Form Title'
+                                ],
+                                'header.cesis.formIntro' => [
+                                    'type' => 'textarea',
+                                    'label' => 'Form Intro'
                                 ],
                                 'header.cesis.backgroundImage' => [
                                     'type' => 'file',
@@ -104,6 +112,33 @@ return [
                                         'header.cesis.step4.text' => [
                                             'type' => 'textarea',
                                             'label' => 'Text'
+                                        ]
+                                    ]
+                                ],
+                                'header.cesis.callToAction' => [
+                                    'type' => 'fieldset',
+                                    'title' => 'Call to Action',
+                                    'icon' => 'comments',
+                                    'collapsed' => false,
+                                    'collapsible' => true,
+                                    'fields' => [
+                                        'header.cesis.callToAction.title' => [
+                                            'type' => 'text',
+                                            'label' => 'Title'
+                                        ],
+                                        'header.cesis.callToAction.buttonText' => [
+                                            'type' => 'text',
+                                            'label' => 'Button Text'
+                                        ],
+                                        'header.cesis.callToAction.buttonLink' => [
+                                            'type' => 'pages',
+                                            'size' => 'medium',
+                                            'classes' => 'fancy',
+                                            'label' => 'PLUGIN_ADMIN.HOME_PAGE',
+                                            'show_all' => true,
+                                            'show_modular' => true,
+                                            'show_root' => true,
+                                            'help' => 'PLUGIN_ADMIN.HOME_PAGE_HELP'
                                         ]
                                     ]
                                 ]

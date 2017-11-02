@@ -44,6 +44,16 @@ class __TwigTemplate_82ae3706bed1a626b23125f6d4d0d5faaac264279e19cca4fdd30d5a91e
         $this->loadTemplate("partials/steps.html.twig", "werkwijze.html.twig", 9)->display($context);
         // line 10
         echo "
+    ";
+        // line 11
+        $this->loadTemplate("partials/taxationForm.html.twig", "werkwijze.html.twig", 11)->display($context);
+        // line 12
+        echo "
+    ";
+        // line 13
+        $this->loadTemplate("partials/footerCta.html.twig", "werkwijze.html.twig", 13)->display($context);
+        // line 14
+        echo "
 ";
     }
 
@@ -59,7 +69,7 @@ class __TwigTemplate_82ae3706bed1a626b23125f6d4d0d5faaac264279e19cca4fdd30d5a91e
 
     public function getDebugInfo()
     {
-        return array (  46 => 10,  44 => 9,  41 => 8,  39 => 7,  36 => 6,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  56 => 14,  54 => 13,  51 => 12,  49 => 11,  46 => 10,  44 => 9,  41 => 8,  39 => 7,  36 => 6,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -81,6 +91,10 @@ class __TwigTemplate_82ae3706bed1a626b23125f6d4d0d5faaac264279e19cca4fdd30d5a91e
     {% include \"partials/largeIntro.html.twig\" %}
 
     {% include \"partials/steps.html.twig\" %}
+
+    {% include \"partials/taxationForm.html.twig\" %}
+
+    {% include \"partials/footerCta.html.twig\" %}
 
 {% endblock %}
 ", "werkwijze.html.twig", "F:\\wamp64\\www\\grav-admin\\user\\themes\\cesis\\templates\\werkwijze.html.twig");

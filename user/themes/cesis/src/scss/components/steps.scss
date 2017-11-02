@@ -1,4 +1,9 @@
 .steps {
+  padding-bottom: rem-calc(84);
+
+  &__step {
+    margin-top: rem-calc(32);
+  }
 
   &__icon {
     display: inline-block;
