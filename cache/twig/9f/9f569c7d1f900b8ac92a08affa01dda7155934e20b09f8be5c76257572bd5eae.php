@@ -41,25 +41,28 @@ class __TwigTemplate_ceedcf9f1f2edc148d36e0e41452e210cc68d87c9fbb0c1f79f89a5100a
         echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "body_classes", array());
         echo "\">
 
-";
-        // line 25
+<div class=\"container\">
+    ";
+        // line 26
         $this->displayBlock('header', $context, $blocks);
-        // line 64
+        // line 43
         echo "
-";
-        // line 65
+    ";
+        // line 44
         $this->displayBlock('body', $context, $blocks);
-        // line 71
+        // line 50
         echo "
-";
-        // line 72
+    ";
+        // line 51
         $this->displayBlock('footer', $context, $blocks);
-        // line 88
+        // line 67
         echo "
+</div>
+
 ";
-        // line 89
+        // line 70
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 92
+        // line 73
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
 
@@ -119,131 +122,82 @@ class __TwigTemplate_ceedcf9f1f2edc148d36e0e41452e210cc68d87c9fbb0c1f79f89a5100a
         echo "        ";
     }
 
-    // line 25
+    // line 26
     public function block_header($context, array $blocks = array())
     {
-        // line 26
-        echo "    <header class=\"header\">
-        <div class=\"row\">
-            <a class=\"header__logo\" href=\"";
-        // line 28
+        // line 27
+        echo "        <header class=\"header\">
+            <div class=\"row\">
+                <a class=\"header__logo\" href=\"";
+        // line 29
         echo ((((isset($context["base_url"]) ? $context["base_url"] : null) == "")) ? ("/") : ((isset($context["base_url"]) ? $context["base_url"] : null)));
         echo "\">
-                Esmeijer Taxatiebureau
-            </a>
+                    Esmeijer Taxatiebureau
+                </a>
 
-            ";
-        // line 32
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 32)->display($context);
+                ";
         // line 33
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 33)->display($context);
+        // line 34
         echo "
-            ";
-        // line 35
-        echo "                ";
-        // line 36
-        echo "                    ";
-        // line 37
-        echo "                        ";
-        // line 38
-        echo "                    ";
-        // line 39
-        echo "                    ";
-        // line 40
-        echo "                        ";
-        // line 41
-        echo "                    ";
-        // line 42
-        echo "                    ";
-        // line 43
-        echo "                        ";
-        // line 44
-        echo "                    ";
-        // line 45
-        echo "                    ";
-        // line 46
-        echo "                        ";
-        // line 47
-        echo "                    ";
-        // line 48
-        echo "                    ";
-        // line 49
-        echo "                        ";
-        // line 50
-        echo "                    ";
-        // line 51
-        echo "                    ";
-        // line 52
-        echo "                        ";
-        // line 53
-        echo "                    ";
-        // line 54
-        echo "                ";
-        // line 55
-        echo "            ";
-        // line 56
-        echo "            ";
-        // line 57
-        echo "            ";
-        // line 58
-        echo "                ";
-        // line 59
-        echo "            ";
-        // line 60
-        echo "            ";
-        // line 61
-        echo "        </div>
-    </header>
-";
+                <button class=\"header__hamburger hamburger hamburger--squeeze hide-for-xlarge float-right\" type=\"button\">
+                <span class=\"hamburger-box\">
+                    <span class=\"hamburger-inner\"></span>
+                </span>
+                </button>
+            </div>
+        </header>
+    ";
     }
 
-    // line 65
+    // line 44
     public function block_body($context, array $blocks = array())
     {
-        // line 66
-        echo "    <main>
-        ";
-        // line 67
+        // line 45
+        echo "        <main>
+            ";
+        // line 46
         $this->displayBlock('content', $context, $blocks);
-        // line 69
-        echo "    </main>
-";
+        // line 48
+        echo "        </main>
+    ";
     }
 
-    // line 67
+    // line 46
     public function block_content($context, array $blocks = array())
     {
-        // line 68
-        echo "        ";
+        // line 47
+        echo "            ";
     }
 
-    // line 72
+    // line 51
     public function block_footer($context, array $blocks = array())
     {
-        // line 73
-        echo "    <footer class=\"footer\">
-        <div class=\"row\">
-            <div class=\"small-24 column\">
-                <a class=\"footer__link\" title=\"Disclaimer\" href=\"\">
-                    Disclaimer
-                </a>
-                <a class=\"footer__link\" title=\"Privacy Statement\" href=\"\">
-                    Privacy Statement
-                </a>
+        // line 52
+        echo "        <footer class=\"footer\">
+            <div class=\"row\">
+                <div class=\"small-24 column\">
+                    <a class=\"footer__link\" title=\"Disclaimer\" href=\"\">
+                        Disclaimer
+                    </a>
+                    <a class=\"footer__link\" title=\"Privacy Statement\" href=\"\">
+                        Privacy Statement
+                    </a>
 
-                <span class=\"footer__copyright\">© Copyright ";
-        // line 83
+                    <span class=\"footer__copyright\">© Copyright ";
+        // line 62
         echo twig_date_format_filter($this->env, "now", "Y");
         echo "</span>
+                </div>
             </div>
-        </div>
-    </footer>
-";
+        </footer>
+    ";
     }
 
-    // line 89
+    // line 70
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 90
+        // line 71
         echo "    ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "jquery", 1 => 100), "method");
     }
@@ -260,7 +214,7 @@ class __TwigTemplate_ceedcf9f1f2edc148d36e0e41452e210cc68d87c9fbb0c1f79f89a5100a
 
     public function getDebugInfo()
     {
-        return array (  247 => 90,  244 => 89,  235 => 83,  223 => 73,  220 => 72,  216 => 68,  213 => 67,  208 => 69,  206 => 67,  203 => 66,  200 => 65,  194 => 61,  192 => 60,  190 => 59,  188 => 58,  186 => 57,  184 => 56,  182 => 55,  180 => 54,  178 => 53,  176 => 52,  174 => 51,  172 => 50,  170 => 49,  168 => 48,  166 => 47,  164 => 46,  162 => 45,  160 => 44,  158 => 43,  156 => 42,  154 => 41,  152 => 40,  150 => 39,  148 => 38,  146 => 37,  144 => 36,  142 => 35,  139 => 33,  137 => 32,  130 => 28,  126 => 26,  123 => 25,  119 => 18,  116 => 17,  113 => 16,  105 => 19,  103 => 16,  98 => 14,  94 => 13,  91 => 12,  89 => 11,  78 => 7,  75 => 6,  72 => 5,  63 => 92,  61 => 89,  58 => 88,  56 => 72,  53 => 71,  51 => 65,  48 => 64,  46 => 25,  41 => 23,  38 => 22,  36 => 5,  31 => 3,  28 => 2,  26 => 1,);
+        return array (  201 => 71,  198 => 70,  189 => 62,  177 => 52,  174 => 51,  170 => 47,  167 => 46,  162 => 48,  160 => 46,  157 => 45,  154 => 44,  142 => 34,  140 => 33,  133 => 29,  129 => 27,  126 => 26,  122 => 18,  119 => 17,  116 => 16,  108 => 19,  106 => 16,  101 => 14,  97 => 13,  94 => 12,  92 => 11,  81 => 7,  78 => 6,  75 => 5,  66 => 73,  64 => 70,  59 => 67,  57 => 51,  54 => 50,  52 => 44,  49 => 43,  47 => 26,  41 => 23,  38 => 22,  36 => 5,  31 => 3,  28 => 2,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -297,69 +251,50 @@ class __TwigTemplate_ceedcf9f1f2edc148d36e0e41452e210cc68d87c9fbb0c1f79f89a5100a
 </head>
 <body class=\"{{ page.header.body_classes }}\">
 
-{% block header %}
-    <header class=\"header\">
-        <div class=\"row\">
-            <a class=\"header__logo\" href=\"{{ base_url == '' ? '/' : base_url }}\">
-                Esmeijer Taxatiebureau
-            </a>
-
-            {% include 'partials/navigation.html.twig' %}
-
-            {#<nav class=\"header__nav\">#}
-                {#<ul class=\"header__navList\">#}
-                    {#<li class=\"header__listItem\">#}
-                        {#<a class=\"header__link\" href=\"#\" title=\"title\">Home</a>#}
-                    {#</li>#}
-                    {#<li class=\"header__listItem\">#}
-                        {#<a class=\"header__link\" href=\"#\" title=\"title\">Vraag een Taxatie aan</a>#}
-                    {#</li>#}
-                    {#<li class=\"header__listItem\">#}
-                        {#<a class=\"header__link\" href=\"#\" title=\"title\">Werkwijze</a>#}
-                    {#</li>#}
-                    {#<li class=\"header__listItem\">#}
-                        {#<a class=\"header__link\" href=\"#\" title=\"title\">Hoe werk het?</a>#}
-                    {#</li>#}
-                    {#<li class=\"header__listItem\">#}
-                        {#<a class=\"header__link\" href=\"#\" title=\"title\">Aankoopbegeleiding</a>#}
-                    {#</li>#}
-                    {#<li class=\"header__listItem\">#}
-                        {#<a class=\"header__link\" href=\"#\" title=\"title\">Contact</a>#}
-                    {#</li>#}
-                {#</ul>#}
-            {#</nav>#}
-            {#{% block header_navigation %}#}
-            {#<nav class=\"main-nav\">#}
-                {#{% include 'partials/navigation.html.twig' %}#}
-            {#</nav>#}
-            {#{% endblock %}#}
-        </div>
-    </header>
-{% endblock %}
-
-{% block body %}
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-{% endblock %}
-
-{% block footer %}
-    <footer class=\"footer\">
-        <div class=\"row\">
-            <div class=\"small-24 column\">
-                <a class=\"footer__link\" title=\"Disclaimer\" href=\"\">
-                    Disclaimer
-                </a>
-                <a class=\"footer__link\" title=\"Privacy Statement\" href=\"\">
-                    Privacy Statement
+<div class=\"container\">
+    {% block header %}
+        <header class=\"header\">
+            <div class=\"row\">
+                <a class=\"header__logo\" href=\"{{ base_url == '' ? '/' : base_url }}\">
+                    Esmeijer Taxatiebureau
                 </a>
 
-                <span class=\"footer__copyright\">© Copyright {{ \"now\"|date(\"Y\") }}</span>
+                {% include 'partials/navigation.html.twig' %}
+
+                <button class=\"header__hamburger hamburger hamburger--squeeze hide-for-xlarge float-right\" type=\"button\">
+                <span class=\"hamburger-box\">
+                    <span class=\"hamburger-inner\"></span>
+                </span>
+                </button>
             </div>
-        </div>
-    </footer>
-{% endblock %}
+        </header>
+    {% endblock %}
+
+    {% block body %}
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    {% endblock %}
+
+    {% block footer %}
+        <footer class=\"footer\">
+            <div class=\"row\">
+                <div class=\"small-24 column\">
+                    <a class=\"footer__link\" title=\"Disclaimer\" href=\"\">
+                        Disclaimer
+                    </a>
+                    <a class=\"footer__link\" title=\"Privacy Statement\" href=\"\">
+                        Privacy Statement
+                    </a>
+
+                    <span class=\"footer__copyright\">© Copyright {{ \"now\"|date(\"Y\") }}</span>
+                </div>
+            </div>
+        </footer>
+    {% endblock %}
+
+</div>
 
 {% block javascripts %}
     {% do assets.addJs('jquery', 100) %}

@@ -5,6 +5,15 @@
 @import "settings/settings";
 @include foundation-everything(false, false);
 
+$hamburgers-padding-x: 20px;
+$hamburgers-padding-y: 15px;
+$hamburger-layer-width: 30px;
+$hamburger-layer-height: 3px;
+$hamburger-layer-color: $color-white;
+$hamburger-types     : (squeeze);
+
+@import "hamburgers";
+
 @import "settings/colors";
 @import "settings/fonts";
 @import "settings/app";

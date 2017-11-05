@@ -2,6 +2,10 @@ body {
   font-family: $font-body;
 }
 
+.container {
+  overflow: hidden;
+}
+
 h1, .h1 {
   font-family: $font-header;
 }

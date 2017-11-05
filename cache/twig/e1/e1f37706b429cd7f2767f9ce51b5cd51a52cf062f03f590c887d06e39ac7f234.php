@@ -21,7 +21,7 @@ class __TwigTemplate_e00f661d77ba6710f6b467228984ab7f3a78d8b03a508739e62c90cc902
         echo "')\">
     <div class=\"hero__content\">
         <div class=\"row\">
-            <div class=\"small-24 column\">
+            <div class=\"small-24 large-16 large-centered column\">
                 <hgroup>
                     <h1 class=\"hero__title\">";
         // line 6
@@ -66,7 +66,7 @@ class __TwigTemplate_e00f661d77ba6710f6b467228984ab7f3a78d8b03a508739e62c90cc902
         return new Twig_Source("<section class=\"hero hero--small text-center\" style=\"background-image: url('{{ page.media[header.cesis.backgroundImage|first.name].cropResize(1920, 10000).url }}')\">
     <div class=\"hero__content\">
         <div class=\"row\">
-            <div class=\"small-24 column\">
+            <div class=\"small-24 large-16 large-centered column\">
                 <hgroup>
                     <h1 class=\"hero__title\">{{ page.header.cesis.headerTitle }}</h1>
                     <h2 class=\"hero__subTitle\">{{ page.header.cesis.headerSubTitle }}</h2>

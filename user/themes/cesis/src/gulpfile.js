@@ -56,7 +56,7 @@ gulp.task('scss', function(done) {
             errLogToConsole: true,
             includePaths: [
                 paths.node+'foundation-sites/scss',
-                paths.node+'css-hamburgers/_sass/hamburgers/'
+                paths.node+'hamburgers/_sass/hamburgers/'
             ]
         }))
         .pipe(gulp.dest(paths.dist+'css/'))

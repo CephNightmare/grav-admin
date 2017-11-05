@@ -21,13 +21,13 @@ class __TwigTemplate_11cfcf1641e5a68c4e406e5e5c1fb15dbb762f95552301d8237e271189a
         echo "')\">
     <div class=\"hero__content\">
         <div class=\"row\">
-            <div class=\"small-24 column\">
+            <div class=\"small-24 large-centered column\">
                 <hgroup>
                     <h1 class=\"hero__title\">";
         // line 6
         echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "headerTitle", array());
         echo "</h1>
-                    <h2 class=\"hero__subTitle\">";
+                    <h2 class=\"hero__subTitle large-16 large-centered\">";
         // line 7
         echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "cesis", array()), "headerSubTitle", array());
         echo "</h2>
@@ -68,10 +68,10 @@ class __TwigTemplate_11cfcf1641e5a68c4e406e5e5c1fb15dbb762f95552301d8237e271189a
         return new Twig_Source("<section class=\"hero text-center\" style=\"background-image: url('{{ page.media[header.cesis.backgroundImage|first.name].cropResize(1920, 10000).url }}')\">
     <div class=\"hero__content\">
         <div class=\"row\">
-            <div class=\"small-24 column\">
+            <div class=\"small-24 large-centered column\">
                 <hgroup>
                     <h1 class=\"hero__title\">{{ page.header.cesis.headerTitle }}</h1>
-                    <h2 class=\"hero__subTitle\">{{ page.header.cesis.headerSubTitle }}</h2>
+                    <h2 class=\"hero__subTitle large-16 large-centered\">{{ page.header.cesis.headerSubTitle }}</h2>
                 </hgroup>
                 <a class=\"hero__button button\" href=\"#taxationForm\" title=\"Vul uw taxatie in\">Vraag direct een taxatie aan.</a>
 

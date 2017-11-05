@@ -11,7 +11,7 @@ $header-height: rem-calc(84);
 
   &__logo {
     height: $header-height;
-    line-height: rem-calc(84);
+    line-height: $header-height;
     white-space: nowrap;
     color: $color-white;
     padding: 0 rem-calc(32);
@@ -28,13 +28,38 @@ $header-height: rem-calc(84);
     }
   }
 
+  &__hamburger {
+    padding: 0;
+    margin-right: rem-calc(30);
+    margin-top: rem-calc(30);
+
+    &:hover, &:focus {
+      outline: none;
+    }
+  }
+
   &__nav {
-    display: inline-block;
-    float: left;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: 100vh;
     font-family: $font-subheader;
     text-transform: uppercase;
     color: $color-white;
-    font-size: rem-calc(13);
+    padding-top: rem-calc(84);
+    margin-left: 100%;
+
+    @media only screen and (min-width: map_get($breakpoints, large)) {
+      display: inline-block;
+      float: left;
+      font-size: rem-calc(13);
+      position: relative;
+      min-height: 0;
+      padding-top: 0;
+      margin-left: 0;
+      background-color: rgba(0, 0, 0, .8);
+    }
   }
 
   &__navList {
@@ -44,7 +69,12 @@ $header-height: rem-calc(84);
   }
 
   &__listItem {
-    float: left;
+    text-align: center;
+
+    @media only screen and (min-width: map_get($breakpoints, large)) {
+      float: left;
+      text-align: left;
+    }
   }
 
   &__link {
@@ -53,20 +83,26 @@ $header-height: rem-calc(84);
     height: $header-height;
     line-height: $header-height;
     color: $color-white;
-    transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    font-weight: 700;
+
+    &:hover, &:focus {
+      color: $color-red;
+    }
 
     @media only screen and (min-width: map_get($breakpoints, large)) {
       padding: 0 rem-calc(20);
       font-size: rem-calc(10);
+      font-weight: 400;
+
+      &:hover, &:focus {
+        background-color: rgba($color-black, .5);
+        color: $color-white;
+      }
     }
     @media only screen and (min-width: map_get($breakpoints, xlarge)) {
       padding: 0 rem-calc(32);
       font-size: rem-calc(14);
-    }
-
-    &:hover, &:focus {
-      background-color: rgba($color-black, .5);
-      color: $color-white;
     }
   }
 }

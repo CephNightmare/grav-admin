@@ -22,69 +22,50 @@
 </head>
 <body class="{{ page.header.body_classes }}">
 
-{% block header %}
-    <header class="header">
-        <div class="row">
-            <a class="header__logo" href="{{ base_url == '' ? '/' : base_url }}">
-                Esmeijer Taxatiebureau
-            </a>
-
-            {% include 'partials/navigation.html.twig' %}
-
-            {#<nav class="header__nav">#}
-                {#<ul class="header__navList">#}
-                    {#<li class="header__listItem">#}
-                        {#<a class="header__link" href="#" title="title">Home</a>#}
-                    {#</li>#}
-                    {#<li class="header__listItem">#}
-                        {#<a class="header__link" href="#" title="title">Vraag een Taxatie aan</a>#}
-                    {#</li>#}
-                    {#<li class="header__listItem">#}
-                        {#<a class="header__link" href="#" title="title">Werkwijze</a>#}
-                    {#</li>#}
-                    {#<li class="header__listItem">#}
-                        {#<a class="header__link" href="#" title="title">Hoe werk het?</a>#}
-                    {#</li>#}
-                    {#<li class="header__listItem">#}
-                        {#<a class="header__link" href="#" title="title">Aankoopbegeleiding</a>#}
-                    {#</li>#}
-                    {#<li class="header__listItem">#}
-                        {#<a class="header__link" href="#" title="title">Contact</a>#}
-                    {#</li>#}
-                {#</ul>#}
-            {#</nav>#}
-            {#{% block header_navigation %}#}
-            {#<nav class="main-nav">#}
-                {#{% include 'partials/navigation.html.twig' %}#}
-            {#</nav>#}
-            {#{% endblock %}#}
-        </div>
-    </header>
-{% endblock %}
-
-{% block body %}
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-{% endblock %}
-
-{% block footer %}
-    <footer class="footer">
-        <div class="row">
-            <div class="small-24 column">
-                <a class="footer__link" title="Disclaimer" href="">
-                    Disclaimer
-                </a>
-                <a class="footer__link" title="Privacy Statement" href="">
-                    Privacy Statement
+<div class="container">
+    {% block header %}
+        <header class="header">
+            <div class="row">
+                <a class="header__logo" href="{{ base_url == '' ? '/' : base_url }}">
+                    Esmeijer Taxatiebureau
                 </a>
 
-                <span class="footer__copyright">© Copyright {{ "now"|date("Y") }}</span>
+                {% include 'partials/navigation.html.twig' %}
+
+                <button class="header__hamburger hamburger hamburger--squeeze hide-for-xlarge float-right" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+                </button>
             </div>
-        </div>
-    </footer>
-{% endblock %}
+        </header>
+    {% endblock %}
+
+    {% block body %}
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    {% endblock %}
+
+    {% block footer %}
+        <footer class="footer">
+            <div class="row">
+                <div class="small-24 column">
+                    <a class="footer__link" title="Disclaimer" href="">
+                        Disclaimer
+                    </a>
+                    <a class="footer__link" title="Privacy Statement" href="">
+                        Privacy Statement
+                    </a>
+
+                    <span class="footer__copyright">© Copyright {{ "now"|date("Y") }}</span>
+                </div>
+            </div>
+        </footer>
+    {% endblock %}
+
+</div>
 
 {% block javascripts %}
     {% do assets.addJs('jquery', 100) %}
