@@ -40,22 +40,182 @@ cesis:
 form:
     name: contact-form
     fields:
-        -
-            name: name
-            label: null
-            placeholder: 'Voor en Achternaam'
-            autofocus: 'off'
-            autocomplete: 'on'
-            type: text
-            validate:
-                required: true
-        -
-            name: email
-            label: null
-            placeholder: E-mailadres
-            type: email
-            validate:
-                required: true
+    -
+        type: display
+        size: large
+        label: Instructions
+        markdown: true
+        content: "**Gegevens opdrachtgever**"
+    -
+        name: initials
+        label: 'Voorletters'
+        placeholder: 'Voorletters'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        validate:
+            required: true
+    -
+       name: firstNAme
+       label: 'Voornaam'
+       placeholder: 'Voornaam'
+       autofocus: 'off'
+       autocomplete: 'on'
+       type: text
+       validate:
+       required: true
+    -
+        name: lastName
+        label: 'Achternaam'
+        placeholder: 'Achternaam'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        validate:
+        required: true
+    -
+        name: sex
+        label: 'Geslacht'
+        placeholder: 'Geslacht'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: select
+        validate:
+        options:
+            Man: Man
+            Vrouw: Vrouw
+        required: true
+    -
+        name: Address
+        label: 'Adres'
+        placeholder: 'Adres'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        required: true
+    -
+        name: postCode
+        label: 'Postcode'
+        placeholder: 'Postcode'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        validate:
+            pattern: '^[1-9][0-9]{3} ?[A-Z]{2}$'
+        required: true
+    -
+        name: placeOfResidence
+        label: 'Woonplaats'
+        placeholder: 'Woonplaats'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        required: true
+    -
+        name: officeNumber
+        label: 'Telnl tijdens kantooruren'
+        placeholder: 'Telnl tijdens kantooruren'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        required: false
+    -
+        name: outOfOfficeNumber
+        label: 'Telnl buiten kantooruren'
+        placeholder: 'Telnl buiten kantooruren'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        required: true
+    -
+        name: emailAddress
+        label: 'Emailadres'
+        placeholder: 'Emailadres'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: email
+        required: true
+    -
+        type: display
+        size: large
+        label: Instructions
+        markdown: true
+        content: "**Te taxeren object**"
+    -
+        name: taxationAddress
+        label: 'Adres Taxatie Object'
+        placeholder: 'Adres'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        required: true
+    -
+        name: taxationPostCode
+        label: 'Postcode Taxatie Object'
+        placeholder: 'Postcode'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        required: true
+    -
+        name: taxationPlaceOfResidence
+        label: 'Woonplaats Taxatie Object'
+        placeholder: 'Woonplaats'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        required: true
+    -
+        name: taxationGoal
+        label: 'Doel taxatie'
+        placeholder: 'Doel taxatie'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: text
+        required: true
+    -
+        name: renovation
+        label: 'Verbouwing + verbouwingsbedrag'
+        placeholder: 'Verbouwing + verbouwingsbedrag'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: textarea
+        required: false
+    -
+        name: objectType
+        label: 'Type TaxatieObject'
+        placeholder: 'Type TaxatieObject'
+        type: select
+        validate:
+        options:
+            Woonhuis: Woonhuis
+            Bedrijfspand: Bedrijfspand
+        required: true
+    -
+        name: lender
+        label: 'Geldverstrekker'
+        placeholder: 'Geldverstrekker'
+        type: text
+        required: true
+    -
+        name: nhg
+        label: 'Heeft u een Nationale Hypotheek Garantie? (NHG)'
+        type: checkbox
+        required: false
+    -
+        name: quotationNumber
+        label: 'Offertenummer/Referentienummer geldverstrekker'
+        placeholder: 'Offertenummer/Referentienummer geldverstrekker'
+        type: text
+        required: true
+    -        
+        name: comments
+        label: 'Overige opmerkingen'
+        placeholder: 'Overige opmerkingen'
+        autofocus: 'off'
+        autocomplete: 'on'
+        type: textarea
+        required: false
     buttons:
         -
             type: submit
